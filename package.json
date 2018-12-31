@@ -1,0 +1,23 @@
+{
+  "name": "catbox-v8",
+  "version": "1.7.6",
+  "description": "Multiple isolates + nodejs = <3 (multi-threaded love)",
+  "main": "catbox-v8.js",
+  "types": "catbox-v8.d.ts",
+  "scripts": {
+    "install": "node-gyp rebuild --release -j 4",
+    "lint": "find src -name '*.cc' | xargs -n1 ./clang-tidy-wrapper"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAmTheVex/catbox-v8.git"
+  },
+  "author": {
+    "name": "Laurentiu Ciobanu | vex",
+    "email": "laurentiu@thevexis.me",
+    "url": "http://thevexis.me"
+  },
+  "license": "MIT",
+  "gypfile": true,
+  "dependencies": {}
+}
